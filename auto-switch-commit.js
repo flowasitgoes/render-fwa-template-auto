@@ -58,8 +58,44 @@ function switchCommit() {
   }
 }
 
-// 立即切換一次
-switchCommit();
+function getTaiwanTimeString(date = new Date()) {
+  return date.toLocaleString('zh-TW', { timeZone: 'Asia/Taipei' });
+}
+
+function getNext9amDate() {
+  const now = new Date();
+  const nowTW = new Date(now.toLocaleString("en-US", { timeZone: "Asia/Taipei" }));
+  let next9am = new Date(nowTW);
+  next9am.setHours(9, 0, 0, 0);
+  if (nowTW.getHours() >= 9) {
+    next9am.setDate(next9am.getDate() + 1);
+  }
+  // 換回 UTC
+  return new Date(next9am.getTime() - (nowTW.getTime() - now.getTime()));
+}
+
+function switchCommitWithLog() {
+  const nowTW = getTaiwanTimeString();
+  const next9amTW = getTaiwanTimeString(getNext9amDate());
+  switchCommit();
+  console.log(`切換時間（台灣）：${nowTW}，下次切換預計：${next9amTW}`);
+}
+
+// 啟動時立即切換一次
+switchCommitWithLog();
+
+function waitUntilNext9amAndStart() {
+  const now = Date.now();
+  const next9am = getNext9amDate().getTime();
+  const msToNext9am = next9am - now;
+  console.log(`距離下次台灣時間9點還有 ${(msToNext9am/1000/60).toFixed(1)} 分鐘`);
+  setTimeout(() => {
+    switchCommitWithLog();
+    setInterval(switchCommitWithLog, 24 * 60 * 60 * 1000); // 之後每24小時執行一次
+  }, msToNext9am);
+}
+
+waitUntilNext9amAndStart();
 
 // 每天切換一次（24小時 = 86400000 毫秒）
 const timer = setInterval(switchCommit, 24 * 60 * 60 * 1000); 
