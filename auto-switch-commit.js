@@ -4,25 +4,25 @@ const path = require('path');
 
 // commit hash 與版型名稱對應
 const commits = [
-  { hash: "fe9960e", name: "Studio-Alphonse" },
-  { hash: "4285095", name: "Casa Lunara" },
-  { hash: "e35bc33", name: "OH Architecture" },
-  { hash: "6a575c8", name: "Interior Design" },
-  { hash: "da8b365", name: "Nite Riot" },
-  { hash: "0f9f6eb", name: "Qudrix" },
-  { hash: "2680ed2", name: "Atlaslogie" },
-  { hash: "2d9b31a", name: "Siena Film Foundation" },
-  { hash: "ac3ba0b", name: "SoScale" },
-  { hash: "6fd99a2", name: "Mirko Romanelli" },
-  { hash: "ede1066", name: "Yellow Fellow" },
-  { hash: "84f4cf9", name: "Showcase" },
-  { hash: "4a5d8de", name: "Moonbase" },
-  { hash: "135bb72", name: "Otherlife Labs" },
-  { hash: "f33075d", name: "MOOOOR" },
-  { hash: "c03e768", name: "Coinsetters" },
-  { hash: "ad3cc04", name: "Cask Exchange" },
-  { hash: "d574731", name: "Dropbox Brand Guidelines" },
-  { hash: "7a8ff63", name: "UNCOMMON" }
+  { hash: "cf131ca", name: "Studio-Alphonse" },
+  { hash: "35bc3a3", name: "Casa Lunara" },
+  { hash: "6753ab3", name: "OH Architecture" },
+  { hash: "8808a1d", name: "Interior Design" },
+  { hash: "f155661", name: "Nite Riot" },
+  { hash: "ecc6ce8", name: "Qudrix" },
+  { hash: "740c0d2", name: "Atlaslogie" },
+  { hash: "082d869", name: "Siena Film Foundation" },
+  { hash: "5ea4be1", name: "SoScale" },
+  { hash: "b4420bb", name: "Mirko Romanelli" },
+  { hash: "e15beac", name: "Yellow Fellow" },
+  { hash: "81510d3", name: "Showcase" },
+  { hash: "7ec257e", name: "Moonbase" },
+  { hash: "eaeb0a2", name: "Otherlife Labs" },
+  { hash: "249fea5", name: "MOOOOR" },
+  { hash: "c15bb27", name: "Coinsetters" },
+  { hash: "278772a", name: "Cask Exchange" },
+  { hash: "05fea79", name: "Dropbox Brand Guidelines" },
+  { hash: "b24a04f", name: "UNCOMMON" }
 ];
 
 
