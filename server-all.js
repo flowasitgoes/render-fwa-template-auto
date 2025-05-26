@@ -20,9 +20,9 @@ app.get('/:page', (req, res) => {
     }
 });
 
-// 默认路由重定向到index.html
+// 默认路由重定向到loading.html
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public-all', 'index.html'));
+    res.sendFile(path.join(__dirname, 'public-all', 'loading.html'));
 });
 
 // 启动服务器

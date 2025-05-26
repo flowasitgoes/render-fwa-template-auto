@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>網站啟動中，請稍候...</title>
+  <style>
+    body { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; font-family: sans-serif; }
+    .loader { border: 8px solid #f3f3f3; border-top: 8px solid #555; border-radius: 50%; width: 60px; height: 60px; animation: spin 1s linear infinite; margin-bottom: 20px;}
+    @keyframes spin { 100% { transform: rotate(360deg); } }
+  </style>
+</head>
+<body>
+  <div class="loader"></div>
+  <h2>網站正在啟動，請稍候...</h2>
+  <p id="countdown"></p>
+  <script>
+    let seconds = 0;
+    function checkReady() {
+      fetch('/index.html', {cache: 'no-store'})
+        .then(res => {
+          if (res.ok) {
+            window.location.href = '/index.html';
+          } else {
+            setTimeout(checkReady, 1500);
+          }
+        })
+        .catch(() => setTimeout(checkReady, 1500));
+      seconds++;
+      document.getElementById('countdown').textContent = `已等待 ${seconds} 秒...`;
+    }
+    checkReady();
+  </script>
+</body>
+</html> 
