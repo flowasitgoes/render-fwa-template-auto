@@ -1,0 +1,137 @@
+{
+  "cards": [
+    {
+      "class": "card large",
+      "animationOrder": 1,
+      "title": "Studio-Alphonse",
+      "link": "/studio-alphonse",
+      "text": "Studio-Alphonse"
+    },
+    {
+      "class": "card tall",
+      "animationOrder": 2,
+      "title": "Casa-Lunara",
+      "link": "/casa",
+      "text": "Casa Lunara"
+    },
+    {
+      "class": "card",
+      "animationOrder": 3,
+      "title": "OH-Architecture",
+      "link": "/oh",
+      "text": "OH Architecture"
+    },
+    {
+      "class": "card wide",
+      "animationOrder": 4,
+      "title": "Interior-Design",
+      "link": "/interior",
+      "text": "Interior Design"
+    },
+    {
+      "class": "card",
+      "animationOrder": 5,
+      "title": "Nite-Riot",
+      "link": "/nite",
+      "text": "Nite Riot"
+    },
+    {
+      "class": "card tall",
+      "animationOrder": 6,
+      "title": "Qudrix",
+      "link": "/qudrix",
+      "text": "Qudrix"
+    },
+    {
+      "class": "card",
+      "animationOrder": 7,
+      "title": "Atlaslogie",
+      "link": "/atlaslogie",
+      "text": "Atlaslogie"
+    },
+    {
+      "class": "card wide",
+      "animationOrder": 8,
+      "title": "Siena-Film-Foundation",
+      "link": "/siena",
+      "text": "Siena Film Foundation"
+    },
+    {
+      "class": "card",
+      "animationOrder": 9,
+      "title": "SoScale",
+      "link": "/soscale",
+      "text": "SoScale"
+    },
+    {
+      "class": "card large",
+      "animationOrder": 10,
+      "title": "Mirko-Romanelli",
+      "link": "/mirko",
+      "text": "Mirko Romanelli"
+    },
+    {
+      "class": "card",
+      "animationOrder": 11,
+      "title": "Yellow-Fellow",
+      "link": "/yellow",
+      "text": "Yellow Fellow"
+    },
+    {
+      "class": "card tall",
+      "animationOrder": 12,
+      "title": "Showcase",
+      "link": "/showcase",
+      "text": "Showcase"
+    },
+    {
+      "class": "card",
+      "animationOrder": 13,
+      "title": "Moonbase",
+      "link": "/moonbase",
+      "text": "Moonbase"
+    },
+    {
+      "class": "card",
+      "animationOrder": 14,
+      "title": "Otherlife-Labs",
+      "link": "/otherlife",
+      "text": "Otherlife Labs"
+    },
+    {
+      "class": "card",
+      "animationOrder": 15,
+      "title": "MOOOOR",
+      "link": "/moooor",
+      "text": "MOOOOR"
+    },
+    {
+      "class": "card tall",
+      "animationOrder": 16,
+      "title": "Coinsetters",
+      "link": "/coinsetters",
+      "text": "Coinsetters"
+    },
+    {
+      "class": "card",
+      "animationOrder": 17,
+      "title": "Cask-Exchange",
+      "link": "/cask",
+      "text": "Cask Exchange"
+    },
+    {
+      "class": "card wide",
+      "animationOrder": 18,
+      "title": "Dropbox-Brand-Guidelines",
+      "link": "/dropbox",
+      "text": "Dropbox Brand Guidelines"
+    },
+    {
+      "class": "card",
+      "animationOrder": 19,
+      "title": "UNCOMMON",
+      "link": "/uncommon",
+      "text": "UNCOMMON"
+    }
+  ]
+} 
